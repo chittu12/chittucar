@@ -663,102 +663,33 @@ width:30rem;
 .image:hover img{
     transform: scale(.8);
 }
-/* #t1{
-display:inline-block;
-}
-#t1 #s1{
-visibility:hidden;
-} */
-/* #t1:hover #s1{
-color:black;
-visibility:visible;
-border:2px solid black;
-border-radius:5px;
-} */
-
-/* .hyundai{
-margin-top:-102px;
-margin-left:220px;
-
-   
-}
-
-.tata{
-margin-top:-102px;
-margin-left:450px;
-
-    
-}
-
-.mahindra{
-margin-top:-102px;
-margin-left:650px;
-
-
-}
-.skoda{
-
-
-}
-.volks{
-margin-top:-102px;
-margin-left:220px;
-}
-
-.kia{
-margin-top:-102px;
-margin-left:450px;
-
-}
-
-.honda{
-margin-top:-102px;
-margin-left:650px;
-}
-
-.toyota{
-
-}
-
-.renault{
-margin-top:-102px;
-margin-left:220px;
-}
-
-.datsun{
-margin-top:-102px;
-margin-left:450px;
-}
-
-.mg{
-margin-top:-117px;
-margin-left:637px;
-padding:15px;
-} */
-
-/* Ensuring the layout has proper spacing and alignment */
-.brand-group {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.brand-group .col {
-    flex: 1;
-    text-align: center;
-}
-
-/* Optional: Style the borders */
-.col.border {
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .col.border {
     border: 1px solid #ddd;
-    padding: 0px;
-}
-
-img {
-    width: 60%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    transition: transform 0.2s ease;
+  }
+  
+  .col.border:hover {
+    transform: scale(1.05);
+    border-color: #333;
+  }
+  
+  .col img {
+    max-width: 150px;
     height: auto;
-}
-
+    object-fit: contain;
+  }
+  
 
 .featured .featured-slider{
     padding:1rem;
