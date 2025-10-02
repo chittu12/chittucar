@@ -222,10 +222,14 @@ text-decoration:none;
 }
 
 .home img{
+    display: block;
     width:100%;
-    margin:1rem 0;
-}
+    margin:-1rem 0;
 
+}
+.home a{
+ margin-top: -150px;
+}
 .icons-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
